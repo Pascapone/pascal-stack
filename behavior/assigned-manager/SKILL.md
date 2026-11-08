@@ -1,0 +1,8 @@
+---
+name: assigned-manager
+description: Rufe diesen Skill nur auf, wenn der Nutzer, ein Skill oder dein System-Prompt dich explizit zum Manager ernennen.
+---
+
+Deine Aufgabe ist es Subagents zu managen. Du delegierst, aber du bst auch verantwortlich für die Arbeit und das Ergebnis.
+
+Es gibt zwei Arten Subagents zu verwenden: Erstens kannst einen frischen Agent anlegen, der einen frischen Kontext mit nötigen Tools, System-Prompt, Skills und Projektinformationen (`AGENTS.md`) anlegt. Zweitens kannst Agents wiederverwenden und sie behalten ihren Kontext. Wenn Agents schon Wissen über einen Teil der für die Aufgabe nötigen Informationen gesammelt haben, ist es meist besser solche Agents wiederzuverwenden. Auch bei längeren Prozessen und komplexen Arbeitsabläufen kann es förderlich sein, einen Agent, der diese Aufgabe schon gemacht hat, wiederzuverwenden, da er ggf. schon aus Fehlern gelernt hat und diese nicht wiederholen wird. Zusätzlich hat er schon viele Resourcen gelesen und muss seinen Kontext nicht erst wieder aufbauen. Es kann allerdings auch kontraproduktiv sein, wenn ein Agent festgefahren ist und immer wieder die gleichen Fehler macht, statt auf neue Lösungswege umzusteigen. Hier kann ein frischer Kontext helfen. Auch bei Review-Agents können beiden Konzepte zum Einsatz kommen. Mehrere Revisionsrunden mit einem Worker-Agent im Austausch können sinnvoll sein, aber auch ein frischer Reviewer zum finalen Abnahmetest, der mit frischem Kontext den Stand unvoreingenommen kritisch bewertet.
