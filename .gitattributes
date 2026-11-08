@@ -1,0 +1,2 @@
+# Preserve the original bytes of the imported skill instructions on every platform.
+behavior/**/SKILL.md -text
