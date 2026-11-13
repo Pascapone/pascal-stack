@@ -15,7 +15,7 @@ curl -s http://127.0.0.1:17843/health
 
 - `authenticated: true` ist Voraussetzung.
 - Die Liste `modules` zeigt, ob `image-generation` installiert und bereit ist.
-- Fehlt die Anmeldung, den Nutzer bitten, sich auf `http://127.0.0.1:17843/` anzumelden. Auf einem Server geht das über `ssh -L 17843:127.0.0.1:17843 -L 1455:127.0.0.1:1455 HOST` aus seinem Browser.
+- Fehlt die Anmeldung, den Nutzer bitten, sich auf `http://127.0.0.1:17843/` anzumelden. Auf einem Server vom eigenen Rechner aus tunneln: `ssh -L 127.0.0.2:17843:127.0.0.1:17843 -L 1455:127.0.0.1:1455 SERVER`, dann im eigenen Browser `http://127.0.0.2:17843/` öffnen. `127.0.0.2` vermeidet die Kollision mit einem lokal laufenden LLS; einen anderen Port (z. B. 17845) lehnt LLS mit `local_requests_only` ab.
 - Fehlt ein Modul, ist es dort nicht installiert. Keinen Ersatz erfinden.
 
 ## Audio transkribieren
