@@ -1,6 +1,6 @@
 # Pascal-Stack
 
-Vier deutschsprachige Behavior Skills für die Zusammenarbeit mit AI-Agents.
+Deutschsprachige Skills für die Zusammenarbeit mit AI-Agents: vier Behavior Skills und ein Werkzeug-Skill.
 Die Skilltexte wurden unverändert aus ihrem bisherigen Stand übernommen.
 
 ## Skills
@@ -12,9 +12,15 @@ Die Skilltexte wurden unverändert aus ihrem bisherigen Stand übernommen.
 | [dialog-modus](behavior/dialog-modus/SKILL.md) | Im laufenden Dialog schnell zusammenarbeiten und Recherche delegieren. |
 | [improving-by-reference](behavior/improving-by-reference/SKILL.md) | Visuelle Varianten erstellen, auswählen lassen und eine reproduzierbare Zielreferenz sichern. |
 
+## Werkzeug-Skills
+
+| Skill | Zweck |
+| --- | --- |
+| [lls](tools/lls/SKILL.md) | Transkription und Bildgenerierung über einen lokal laufenden Local Little Service (LLS). Setzt eine LLS-Installation auf dem Rechner voraus. |
+
 ## Installation
 
-Alle vier Skills global für Codex und die gemeinsame Agent-Skill-Installation installieren:
+Alle Skills global für Codex und die gemeinsame Agent-Skill-Installation installieren:
 
 ```sh
 npx skills add Pascapone/pascal-stack --global --agent codex universal --yes
@@ -51,6 +57,8 @@ npx skills update assigned-manager back-on-track dialog-modus improving-by-refer
 ## Aufbau und Pflege
 
 ```text
+tools/
+  lls/SKILL.md
 behavior/
   assigned-manager/SKILL.md
   back-on-track/SKILL.md
